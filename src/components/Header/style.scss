@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  height: 40px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  top: 0;
+  background-color: rgb(71, 177, 247);
+  align-items: center;
+
+  a {
+    height: 60%;
+    img {
+      height: 100%;
+      filter: drop-shadow(8px 3px 0.7em #4444dd);
+    }
+  }
+  
+}
+
+@media screen and (min-width: 820px) {
+  .header {
+    height: 60px;
+
+    a {
+      height: 70%;
+      transition-duration: 500ms;
+      img {
+        height: 100%;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    
+  }
+  
+  
+}

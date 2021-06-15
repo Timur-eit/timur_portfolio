@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import 'App.scss'
+import Intro from 'components/Intro/Intro'
+import Header from 'components/Header/Header'
+
+// import {urlList} from 'components/Header/urlList'
+// import HeaderLink from 'components/HeaderLink/HeaderLink'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <div>
+      {Object.keys(urlList).map((linkUrl) => {
+        <HeaderLink
+          url={urlList[linkUrl].url}
+          imgPath={urlList[linkUrl].logo}
+          altText={urlList[linkUrl].note}
+        />
+      })}
+      </div> */}
+      
+      
+      <Header />
+      <Intro />
     </div>
-  );
+  )
 }
 
 export default App;
