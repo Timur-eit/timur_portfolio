@@ -3,6 +3,7 @@ import './style.scss'
 
 function Intro() {
   return (
+    <>
     <div className='intro'>
       <img src={mainPicture} className='main-picture' alt='me'/>
       <div>
@@ -12,6 +13,11 @@ function Intro() {
         </p>
       </div>    
     </div>
+    <h1 className='temp' style={{'color': 'white', 'margin': '0 0.2em'}}>
+      At the moment the site is under construction by
+      <a href='https://timur-eit.github.io/'>Timur-eit</a>
+    </h1>  
+    </>
   )
 }
 
