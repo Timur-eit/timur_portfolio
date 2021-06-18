@@ -11,7 +11,8 @@
   a {
     height: 60%;
     img {
-      height: 100%;
+      height: 100px;
+      width: 100px;
       filter: drop-shadow(8px 3px 0.7em #4444dd);
     }
   }
@@ -25,15 +26,18 @@
     a {
       height: 70%;
       transition-duration: 500ms;
-      img {
-        height: 100%;
-      }
+      
       &:hover {
         transform: scale(1.2);
       }
     }
 
     
+  }
+
+  img {
+    height: 100px;
+    width: 100px;  
   }
   
   
