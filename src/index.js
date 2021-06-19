@@ -2,12 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'reset.css';
 import 'index.scss';
+
 import App from 'App';
+import AgilePduDescription from 'components/WorksList/AgilePduStore';
+
+import {
+  BrowserRouter as Router, // глобальня обертка (можно в индекс джс)
+  Switch,
+  Route,
+  // Link
+} from 'react-router-dom'
+
 import reportWebVitals from 'reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route path='/'>
+          <App />          
+        </Route>
+        <Route path='/agile-pdu'>
+          <AgilePduDescription />     
+        </Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

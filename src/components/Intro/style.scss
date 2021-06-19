@@ -1,5 +1,5 @@
 .intro-question {
-  height: 95vh;
+  height: 90vh;
   background-color: #12232E;
 
   display: flex;
@@ -13,7 +13,6 @@
 }
 
 .intro {
-
   background-color: #007CC7;
   display: flex;
   justify-content: space-around;
@@ -27,7 +26,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4em 0;
+    padding: 5em 0;
     max-width: 700px;
     align-items: center;
 
@@ -46,10 +45,12 @@
   
 }
 
+@media screen and (min-width: 820px) {
+  .intro-question {
+    height: 95vh;
+  }
 
-
-.temp {
-  display: flex;
-  justify-content: space-between;
+  .intro__content {    
+    padding: 4em 0;
+  }
 }
-

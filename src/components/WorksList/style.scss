@@ -1,0 +1,69 @@
+.workslist-container {
+  min-height: 100vh;
+  background-color: #007CC7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    padding-top: 4em;
+    padding-bottom: 1em;
+  }
+
+  .list {
+    // background-color: #203647;
+    width: 80%;
+    // height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      span {
+        text-transform: uppercase;
+        font-size: 0.8em;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      text-decoration: none;
+      &:visited {
+        color: inherit;
+      }
+    }
+
+
+
+    .list__item {
+      width: 200px;
+      height: 150px;
+      background-color: #007CC7;
+      background-color: #12232E;
+      background-color: #203647;
+      transition-duration: 300ms;
+
+
+      &:last-child {
+        margin-bottom: 4em;
+      }
+      &:hover {
+        transform: scale(1.5);
+        cursor: pointer;
+      }
+
+      p {
+        padding: 0;
+      }
+
+
+      img {
+        width: 100%;
+      }
+
+    }
+  }
+}
