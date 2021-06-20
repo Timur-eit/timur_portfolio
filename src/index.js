@@ -1,10 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'reset.css';
-import 'index.scss';
+import reportWebVitals from 'reportWebVitals'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import 'reset.css'
+import 'index.scss'
 
-import App from 'App';
-import AgilePduDescription from 'components/WorksList/AgilePduStore';
+import App from 'App'
+import ProjectDescription from 'components/WorksList/ProjectDescription'
 
 import {
   BrowserRouter as Router, // глобальня обертка (можно в индекс джс)
@@ -12,17 +13,35 @@ import {
   Route,
 } from 'react-router-dom'
 
-import reportWebVitals from 'reportWebVitals';
+import { createBrowserHistory } from 'history'
+
+import { myWorksList } from 'components/WorksList/worksList'
+
+
+let history = createBrowserHistory()
+console.log(history.location.pathname)
+
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Switch>        
-        <Route path='/agile-pdu'>
-          <AgilePduDescription />     
-        </Route>
+      <Switch>
+        {Object.keys(myWorksList).map((item) => {
+          return (
+            <Route path={myWorksList[item].path} key={myWorksList[item].path}>
+              <ProjectDescription
+                title={myWorksList[item].title}
+                projectUrl={'/'}
+                srcCodeUrl={'/'}
+                img={myWorksList[item].imgSrc}
+                desciption={myWorksList[item].description}
+              />
+            </Route>
+          )
+        })}
         <Route exact path='/'>
-          <App />          
+          <App />
         </Route>
       </Switch>
     </Router>

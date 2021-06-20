@@ -2,23 +2,19 @@ import './style.scss'
 import {myWorksList} from './worksList.js'
 
 import {Link} from 'react-router-dom'
+import { useMemo } from 'react'
 
-function WorkList() {
+function WorkList() {  
+  const dataList = useMemo(() => myWorksList, [])  
   return (
-
       <div className='workslist-container'>
         <h2>List of my works</h2>
         <div className='list'>
-          {/* <Link to='/agile-pdu' className='list__item'>
-            <img src={agilePduImg} alt='Project name'/>
-            <span>Agile-PDU online store</span>
-          </Link> */}
-          {Object.keys(myWorksList).map((item) => {
-            console.log(myWorksList)
+          {Object.keys(dataList).map((item) => {  
             return (
-              <Link key={myWorksList[item].title} to={myWorksList[item].path} className='list__item'>
-                <img src={myWorksList[item].imgSrc} alt={myWorksList[item].altText()}/>
-                <span>{myWorksList[item].title}</span>
+              <Link key={dataList[item].title} to={dataList[item].path} className='list__item'>
+                <img src={dataList[item].imgSrc} alt={dataList[item].altText()}/>
+                <span>{dataList[item].title}</span>
               </Link>
             )  
           })}

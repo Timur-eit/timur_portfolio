@@ -9,6 +9,8 @@ import portfolioImg from 'shared/img/works_portfolio.png'
 import brainGamesImg from 'shared/img/works_brain-games.png'
 import jsSamplesImg from 'shared/img/works_js-samples.png'
 
+import { projectDescription } from './projectDescriptionData.jsx'
+
 export const myWorksList = {
   agilePdu: {
     title: 'Agile-PDU online store',
@@ -17,6 +19,7 @@ export const myWorksList = {
     altText() {
       return this.title + ' Image'
     },
+    description: projectDescription.agilePdu,
   },
   portfolio: {
     title: 'My Portfolio Website',
