@@ -10,7 +10,6 @@ import {
   BrowserRouter as Router, // глобальня обертка (можно в индекс джс)
   Switch,
   Route,
-  // Link
 } from 'react-router-dom'
 
 import reportWebVitals from 'reportWebVitals';
@@ -18,12 +17,12 @@ import reportWebVitals from 'reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Switch>
-        <Route path='/'>
-          <App />          
-        </Route>
+      <Switch>        
         <Route path='/agile-pdu'>
           <AgilePduDescription />     
+        </Route>
+        <Route exact path='/'>
+          <App />          
         </Route>
       </Switch>
     </Router>

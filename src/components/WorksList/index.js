@@ -1,24 +1,29 @@
 import './style.scss'
-import agilePduImg from 'shared/img/works_agile-pdu.png'
+import {myWorksList} from './worksList.js'
 
-import {
-  BrowserRouter as Router, // глобальня обертка (можно в индекс джс)  
-  Link
-} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 function WorkList() {
   return (
-    <Router>
+
       <div className='workslist-container'>
         <h2>List of my works</h2>
         <div className='list'>
-          <Link path='/agile-pdu' className='list__item'>
+          {/* <Link to='/agile-pdu' className='list__item'>
             <img src={agilePduImg} alt='Project name'/>
             <span>Agile-PDU online store</span>
-          </Link>  
-        </div>
+          </Link> */}
+          {Object.keys(myWorksList).map((item) => {
+            console.log(myWorksList)
+            return (
+              <Link key={myWorksList[item].title} to={myWorksList[item].path} className='list__item'>
+                <img src={myWorksList[item].imgSrc} alt={myWorksList[item].altText()}/>
+                <span>{myWorksList[item].title}</span>
+              </Link>
+            )  
+          })}
+        </div>      
       </div>
-    </Router>
   )
 }
 
