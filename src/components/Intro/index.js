@@ -5,7 +5,7 @@ function Intro() {
   return (
     <>
       <div className='intro-question'>
-        <h1>Are you looking for junior Frontend Developer?</h1>
+        <h1>Are you looking for a junior Frontend Developer?</h1>
       </div>
       <div className='intro'>
         <div className='intro__content'>

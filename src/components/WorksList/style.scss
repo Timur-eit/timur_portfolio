@@ -1,6 +1,6 @@
 .workslist-container {
   min-height: 100vh;
-  background-color: #007CC7;
+  background-color: #2d5f99;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,68 +8,72 @@
 
   h2 {
     padding-top: 4em;
-    padding-bottom: 1em;
   }
 
   .list {
     // background-color: #203647;
-    width: 80%;
+    width: 95%;
     // height: 95%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    a {
-      span {
-        text-transform: uppercase;
-        font-size: 0.8em;
-      }
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-
-      text-decoration: none;
-      color: #EEFBFB;
-      &:visited {
-        color: inherit;
-      }
-    }
-
-
 
     .list__item {
-      width: 200px;
-      height: 150px;
-      // background-color: #007CC7;
-      // background-color: #12232E;
+      // flex-basis: 650px;
+      // width: 650px;
+      // height: 500px;
       background-color: #203647;
       transition-duration: 300ms;
       // border: 0.5px solid black;
-      margin-left: 0.5em;
-      margin-top: 0.5em;
-      border: #203647 solid 0.5px;
+      // margin-left: 0.5em;
+      margin-top: 1.5em;
+      // border: #203647 solid 0.5px;
+      box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3 {
+        font-weight: bold;
+      }
 
 
       &:last-child {
         margin-bottom: 4em;
       }
-      &:hover {
-        transform: scale(1.5);
-        cursor: pointer;
-      }
-
-      p {
-        padding: 0;
-      }
-
 
       img {
         width: 100%;
-        height: 85%;
+        height: 250px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
       }
 
+      .list__item__description {
+        h3 {
+          padding: 1em 0 0 1em;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        // color: #EEFBFB;
+        margin: 1em;
+        padding: 0.3em 0.5em;
+        color: #58b4ee;
+        align-self: flex-start;
+
+        &:visited {
+          color: #58b4ee;
+        }
+        &:hover {
+          cursor: pointer;
+          background-color: #244a5f;
+        }
+      }
     }
   }
 }
@@ -142,11 +146,21 @@
   }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 600px) {
+  
+  .list__item {
+    width: 350px;
+    height: 400px;
+    margin-left: 1em;
+
+    img {
+      // height: 250px;
+    }
+  }
+
   .project-description {
     img {
       width: 550px;
     }
   }
-
 }

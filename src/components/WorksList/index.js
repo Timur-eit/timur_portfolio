@@ -12,10 +12,14 @@ function WorkList() {
         <div className='list'>
           {Object.keys(dataList).map((item) => {  
             return (
-              <Link key={dataList[item].title} to={dataList[item].path} className='list__item'>
-                <img src={dataList[item].imgSrc} alt={dataList[item].altText()}/>
-                <span>{dataList[item].title}</span>
-              </Link>
+              <div key={dataList[item].title} className='list__item'>
+                <div className='list__item__description'>
+                  <img src={dataList[item].imgSrc} alt={dataList[item].altText()}/>                
+                  <h3>{dataList[item].title}</h3>
+                  <p>Description</p>                  
+                </div>
+                <Link to={dataList[item].path}>View</Link>
+              </div>
             )  
           })}
         </div>      
