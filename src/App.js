@@ -2,6 +2,7 @@ import 'App.scss'
 import Intro from 'components/Intro'
 import Skills from 'components/Skills'
 import WorksList from 'components/WorksList'
+import BasicTextFields from 'shared/ui/Form'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Intro />
       <Skills />
       <WorksList />
+      <BasicTextFields />
     </div>
   )
 }
