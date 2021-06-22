@@ -19,7 +19,8 @@ export const myWorksList = {
     altText() {
       return this.title + ' Image'
     },
-    description: projectDescription.agilePdu,
+    generalDescription: projectDescription.agilePdu.general, 
+    mainDescription: projectDescription.agilePdu.main,
   },
   portfolio: {
     title: 'My Portfolio Website',

@@ -6,22 +6,18 @@ import 'index.scss'
 
 import App from 'App'
 import ProjectDescription from 'components/WorksList/ProjectDescription'
-
 import {
   BrowserRouter as Router, // глобальня обертка (можно в индекс джс)
   Switch,
   Route,
 } from 'react-router-dom'
 
-import { createBrowserHistory } from 'history'
-
+// import { createBrowserHistory } from 'history'
 import { myWorksList } from 'components/WorksList/worksList'
 
 
-let history = createBrowserHistory()
-console.log(history.location.pathname)
-
-
+// let history = createBrowserHistory()
+// console.log(history.location.pathname)
 
 ReactDOM.render(
   <React.StrictMode>
@@ -35,7 +31,7 @@ ReactDOM.render(
                 projectUrl={'/'}
                 srcCodeUrl={'/'}
                 img={myWorksList[item].imgSrc}
-                desciption={myWorksList[item].description}
+                desciption={myWorksList[item].mainDescription}
               />
             </Route>
           )
