@@ -46,7 +46,11 @@ export const myWorksList = {
     altText() {
       return this.title + ' Image'
     },
-
+    generalDescription: projectDescription.webHelp.general, 
+    mainDescription: projectDescription.webHelp.main,
+    projectUrl: '/web-help-menu/index.html',
+    isSrcLink: true,
+    srcCodeUrl: 'https://github.com/Timur-eit/idea_web_help',
   },
   dataTable: {
     title: 'Web App with Data table',

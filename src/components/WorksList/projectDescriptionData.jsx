@@ -34,4 +34,21 @@ export const projectDescription = {
       </>
     )
   },
+  webHelp: {
+    general: 'Webhelp Menu',
+    main: (
+      <>
+        <p>
+          This is a web help menu for navigating some technical documentation. This is a test assignment given to me by one of my fellow developers to train and improve my skills. Navigation is possible using both the mouse and the keyboard.
+        </p>
+        <ul>
+          <p>List of technologies used:</p>
+          <li>React JS (Create React App)</li>
+          <li>Redux</li>
+          <li>SASS</li>
+          <li>Mousetrap</li>
+        </ul>
+      </>
+    )
+  },
 }
