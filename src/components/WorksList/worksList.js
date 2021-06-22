@@ -14,7 +14,7 @@ import { projectDescription } from './projectDescriptionData.jsx'
 export const myWorksList = {
   agilePdu: {
     title: 'Agile-PDU online store',
-    path: '/agile-pdu',
+    path: '/agile-pdu-description',
     imgSrc: agilePduImg,
     altText() {
       return this.title + ' Image'
@@ -41,7 +41,7 @@ export const myWorksList = {
   },
   webHelp: {
     title: 'Web-Help Visual Guidelines',
-    path: '/web-help-menu',
+    path: '/web-help-menu-description',
     imgSrc: webHelpMenuImg,
     altText() {
       return this.title + ' Image'
