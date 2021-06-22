@@ -8,6 +8,7 @@ function ProjectDescription(props) {
     srcCodeUrl,
     img,
     desciption,
+    isSrcLink,
   } = props
 
   return (
@@ -17,7 +18,7 @@ function ProjectDescription(props) {
         <img src={img} alt='img'/>
         {desciption}
         <a href={projectUrl} target='_blank' rel="noopener noreferrer" className='project-link'>Project Link</a>
-        <a href={srcCodeUrl} target='_blank' rel="noopener noreferrer" className='project-link'>Source Code Link</a>
+        {isSrcLink && <a href={srcCodeUrl} target='_blank' rel="noopener noreferrer" className='project-link'>Source Code Link</a>}
       </div>
       <Link to='/' className='home-link'>Home</Link>
     </div>

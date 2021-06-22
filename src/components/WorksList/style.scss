@@ -76,7 +76,9 @@
   align-items: center;
   text-align: center;
   justify-content: flex-start;
-  
+  position: relative;
+  padding: 0 0 1em 0;
+   
   > * {
     width: 350px;
   }
@@ -86,7 +88,7 @@
   }
 
   h1 {
-    margin: 1em 0 0.5em 0;
+    margin: 2em 0 0.5em 0;
   }
 
   p {

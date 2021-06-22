@@ -28,10 +28,11 @@ ReactDOM.render(
             <Route path={myWorksList[item].path} key={myWorksList[item].path}>
               <ProjectDescription
                 title={myWorksList[item].title}
-                projectUrl={'/'}
-                srcCodeUrl={'/'}
+                projectUrl={myWorksList[item].projectUrl}
                 img={myWorksList[item].imgSrc}
                 desciption={myWorksList[item].mainDescription}
+                isSrcLink={myWorksList[item].isSrcLink}
+                srcCodeUrl={myWorksList[item].srcCodeUrl}
               />
             </Route>
           )

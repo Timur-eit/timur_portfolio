@@ -21,6 +21,10 @@ export const myWorksList = {
     },
     generalDescription: projectDescription.agilePdu.general, 
     mainDescription: projectDescription.agilePdu.main,
+    projectUrl: '/agile-pdu/index.html',
+    isSrcLink: false,
+    srcCodeUrl: '#',
+
   },
   portfolio: {
     title: 'My Portfolio Website',
@@ -29,7 +33,11 @@ export const myWorksList = {
     altText() {
       return this.title + ' Image'
     },
-
+    generalDescription: projectDescription.portfolio.general, 
+    mainDescription: projectDescription.portfolio.main,
+    projectUrl: '/',
+    isSrcLink: true,
+    srcCodeUrl: 'https://github.com/Timur-eit/timur_portfolio',
   },
   webHelp: {
     title: 'Web-Help Visual Guidelines',
