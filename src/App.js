@@ -10,7 +10,6 @@ function App() {
       <Intro />
       <Skills />
       <WorksList />
-      <BasicTextFields />
     </div>
   )
 }

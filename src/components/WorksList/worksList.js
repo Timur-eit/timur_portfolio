@@ -108,29 +108,42 @@ export const myWorksList = {
   },
   gradient: {
     title: 'Gradient - Test task for React states',
-    path: '/gradient',
+    path: '/gradient-description',
     imgSrc: gradientImg,
     altText() {
       return this.title + ' Image'
     },
-
+    generalDescription: projectDescription.gradient.general, 
+    mainDescription: projectDescription.gradient.main,
+    projectUrl: '/gradient/index.html',
+    isSrcLink: true,
+    srcCodeUrl: 'https://github.com/Timur-eit/react_samples/tree/master/gradient',
   },
   brainGames: {
-    title: 'Brain Games - Simple arithmetic CLI game',
-    path: '/brain-games',
+    title: 'Brain Games',
+    path: '/brain-games-description',
     imgSrc: brainGamesImg,
     altText() {
       return this.title + ' Image'
     },
+    generalDescription: projectDescription.brainGames.general, 
+    mainDescription: projectDescription.brainGames.main,
+    projectUrl: 'https://github.com/Timur-eit/brain_games#brain-games',
+    isSrcLink: true,
+    srcCodeUrl: 'https://github.com/Timur-eit/brain_games',
 
   },
   jsSamples: {
-    title: 'Some samples of JS code',
-    path: '/js-samples',
+    title: 'JS code',
+    path: '/js-samples-description',
     imgSrc: jsSamplesImg,
     altText() {
       return this.title + ' Image'
     },
-
+    generalDescription: projectDescription.jsSamples.general, 
+    mainDescription: projectDescription.jsSamples.main,
+    projectUrl: 'https://github.com/Timur-eit/misc_jsSamples',
+    isSrcLink: false,
+    srcCodeUrl: '',
   },
 }

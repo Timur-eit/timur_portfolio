@@ -115,4 +115,48 @@ export const projectDescription = {
       </>
     )
   },
+  gradient: {
+    general: 'Task for learning React hooks',
+    main: (
+      <>
+        <p>
+          The first steps of my learning React
+        </p>
+        <ul>
+          <p>List of technologies used:</p>
+          <li>ReactJS</li>
+          <li>CSS</li>
+        </ul>
+      </>
+    )
+  },
+  brainGames: {
+    general: 'Simple arithmetic CLI games',
+    main: (
+      <>
+        <p>
+          Education project. Mini-games for CLI. That what my start of learning JS.
+        </p>
+        <ul>
+          <p>List of technologies used:</p>
+          <li>CLI (POSIX)</li>
+          <li>Node.js</li>
+        </ul>
+      </>
+    )
+  },
+  jsSamples: {
+    general: 'Some samples of JS code',
+    main: (
+      <>
+        <p>
+          {/* Education project. Mini-games for CLI. That what my start of learning JS. */}
+        </p>
+        <ul>
+          <p>List of technologies used:</p>
+          <li>JavaScript</li>
+        </ul>
+      </>
+    )
+  },
 }
