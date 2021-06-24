@@ -70,4 +70,19 @@ export const projectDescription = {
       </>
     )
   },
+  uiComponents: {
+    general: 'Some sample UI components',
+    main: (
+      <>
+        <p>
+          Some sample UI components written with ReactJS
+        </p>
+        <ul>
+          <p>List of technologies used:</p>
+          <li>React JS (Hooks)</li>
+          <li>CSS</li>
+        </ul>
+      </>
+    )
+  },
 }

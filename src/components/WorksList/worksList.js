@@ -61,19 +61,23 @@ export const myWorksList = {
     },
     generalDescription: projectDescription.dataTable.general, 
     mainDescription: projectDescription.dataTable.main,
-    projectUrl: '/web-help-menu/index.html',
+    projectUrl: '/data-table/index.html',
     isSrcLink: true,
     srcCodeUrl: 'https://github.com/Timur-eit/Evgeny_react/tree/main/my-table',
 
   },
   uiComponents: {
     title: 'UI Components',
-    path: '/ui-comps',
+    path: '/ui-comps-description',
     imgSrc: uiCompsImg,
     altText() {
       return this.title + ' Image'
     },
-
+    generalDescription: projectDescription.uiComponents.general, 
+    mainDescription: projectDescription.uiComponents.main,
+    projectUrl: '/ui-comps/index.html',
+    isSrcLink: true,
+    srcCodeUrl: 'https://github.com/Timur-eit/Evgeny_react/tree/main/my-ui-comps',
   },
   whackAMole: {
     title: 'Whack-a-Mole Game',
