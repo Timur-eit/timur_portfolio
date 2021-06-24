@@ -81,11 +81,16 @@ export const myWorksList = {
   },
   whackAMole: {
     title: 'Whack-a-Mole Game',
-    path: '/whack-a-mole',
+    path: '/whack-a-mole-description',
     imgSrc: whackAMoleImg,
     altText() {
       return this.title + ' Image'
     },
+    generalDescription: projectDescription.whackAMole.general, 
+    mainDescription: projectDescription.whackAMole.main,
+    projectUrl: '/whack-a-mole/index.html',
+    isSrcLink: true,
+    srcCodeUrl: 'https://github.com/Timur-eit/whack-a-mole',
 
   },
   pokemons: {

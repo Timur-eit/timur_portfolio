@@ -85,4 +85,19 @@ export const projectDescription = {
       </>
     )
   },
+  whackAMole: {
+    general: 'Fun simple browser game whack-a-mole',
+    main: (
+      <>
+        <p>
+          Browser game whack-a-mole
+        </p>
+        <ul>
+          <p>List of technologies used:</p>
+          <li>Vanilla JS</li>
+          <li>HTML + CSS</li>
+        </ul>
+      </>
+    )
+  },
 }
