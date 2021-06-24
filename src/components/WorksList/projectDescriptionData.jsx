@@ -100,4 +100,19 @@ export const projectDescription = {
       </>
     )
   },
+  pokemons: {
+    general: 'Task for learning React hooks',
+    main: (
+      <>
+        <p>
+          The first steps of my learning React
+        </p>
+        <ul>
+          <p>List of technologies used:</p>
+          <li>ReactJS</li>
+          <li>CSS</li>
+        </ul>
+      </>
+    )
+  },
 }

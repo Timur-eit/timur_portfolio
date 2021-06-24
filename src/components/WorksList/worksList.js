@@ -94,13 +94,17 @@ export const myWorksList = {
 
   },
   pokemons: {
-    title: 'Pokemons - Test task for React hooks',
-    path: '/pokemons',
+    title: 'Pokemons',
+    path: '/pokemons-description',
     imgSrc: pockemonsImg,
     altText() {
       return this.title + ' Image'
     },
-
+    generalDescription: projectDescription.pokemons.general, 
+    mainDescription: projectDescription.pokemons.main,
+    projectUrl: '/pokemons/index.html',
+    isSrcLink: true,
+    srcCodeUrl: 'https://github.com/Timur-eit/react_samples/tree/master/pokemons',
   },
   gradient: {
     title: 'Gradient - Test task for React states',
