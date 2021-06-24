@@ -47,6 +47,25 @@ export const projectDescription = {
           <li>Redux</li>
           <li>SASS</li>
           <li>Mousetrap</li>
+          <li>Jest</li>
+        </ul>
+      </>
+    )
+  },
+  dataTable: {
+    general: 'Data table',
+    main: (
+      <>
+        <p>
+          A small web application for reading and formatting some data. The default data is fetched from a JSON file, after which you can add, format, and delete your own data stored in browser cookies.
+        </p>
+        <ul>
+          <p>List of technologies used:</p>
+          <li>React JS</li>
+          <li>Redux</li>
+          <li>SASS</li>
+          <li>Jest</li>
+          <li>Puppeteer</li>
         </ul>
       </>
     )

@@ -54,11 +54,16 @@ export const myWorksList = {
   },
   dataTable: {
     title: 'Web App with Data table',
-    path: '/data-table',
+    path: '/data-table-description',
     imgSrc: dataTableImg,
     altText() {
       return this.title + ' Image'
     },
+    generalDescription: projectDescription.dataTable.general, 
+    mainDescription: projectDescription.dataTable.main,
+    projectUrl: '/web-help-menu/index.html',
+    isSrcLink: true,
+    srcCodeUrl: 'https://github.com/Timur-eit/Evgeny_react/tree/main/my-table',
 
   },
   uiComponents: {
