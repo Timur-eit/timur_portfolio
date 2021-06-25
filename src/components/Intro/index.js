@@ -4,7 +4,7 @@ import './style.scss'
 function Intro() {
   return (
     <>
-      <div className='intro-question'>
+      <div className='intro-question' id='intro'>
         <h1>Are you looking for a junior Frontend Developer?</h1>
       </div>
       <div className='intro'>

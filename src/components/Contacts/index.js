@@ -1,44 +1,24 @@
 import './style.scss'
-// import {myWorksList} from './worksList.js'
+import { myContactList } from './contactsData.js'
 import { useMemo } from 'react'
 
 function Contacts() {
-  // const dataList = useMemo(() => myWorksList, [])
+  const dataList = useMemo(() => myContactList, [])
   return (
       <div className='contacts-container'>
-       <h1>where you can find me</h1>
+       <h2>where you can find me</h2>       
        <div>
-       
-        <div>
-         <p>You can write me an email</p>
-         <div>@</div>        
+        {Object.keys(dataList).map((contact) => {
+          return (
+            <a href={dataList[contact].linkPath} className='contacts-item' target='_blank' rel='noopener noreferrer'>
+              <p>{dataList[contact].text}</p>
+              <img src={dataList[contact].imgSrc} alt={dataList[contact].altText} />
+            </a>
+          )
+        })}
         </div>
-        
-        <div>
-         <p>Or you can write me in Telegram</p>
-         <div>T</div>        
-        </div>
-        
-        <div>
-         <p>You can also visit my GitHub account</p>
-         <div>GitHub</div>
-        </div>
-        
-        <div>
-          <p>And my HeadHunter account</p>
-          <div>HH</div>
-        </div>
-
-        <div>
-         <p>If you'd like to know a bit more about me you can visit my VK page</p>
-         <div>VK</div>
-        </div>
-
+        <a href='#intro' className='back-home'>back to top</a>
        </div>
-
-      <div>back to top</div>
-
-      </div>
   )
 }
 
