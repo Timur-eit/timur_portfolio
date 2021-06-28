@@ -1,5 +1,7 @@
+@import '../../colors';
+
 .contacts-container {
-  background-color: #203647;
+  background-color: $backgroundDark;
   padding: 4em 0;
   display: flex;
   flex-direction: column;
@@ -21,18 +23,18 @@
 
   a {
     text-decoration: none;
-    color: #EEFBFB;
+    color: $fontColor;
   }
 
   .contacts-item {
-    background-color: #2d5f99;
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    background-color: $backgroundLigth;
+    box-shadow: $shadow;
     height: 65px;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition-duration: 100ms;    
+    transition-duration: 100ms;
     margin-bottom: 0.5em;
     width: 100%;
 
@@ -48,7 +50,6 @@
   }
 
   .back-home {
-    
     text-transform: uppercase;
     padding: 0.5em 1em;
     margin: 4em 0 1em 0;
@@ -57,10 +58,10 @@
     transition-duration: 300ms;
     &:hover {
       opacity: 1;
-      background-color: #2d5f99;
+      background-color: $backgroundLigth;
       transform: scale(1.1);
     }
-    
+
   }
 }
 
@@ -69,5 +70,5 @@
     > div {
       width: 470px;
     }
-  }  
+  }
 }

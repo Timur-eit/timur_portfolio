@@ -1,6 +1,8 @@
+@import '../../colors';
+
 .intro-question {
   height: 90vh;
-  background-color: #12232E;
+  background-color: $backgroundDark;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -13,7 +15,7 @@
 }
 
 .intro {
-  background-color: #2d5f99;
+  background-color: $backgroundLigth;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -39,7 +41,7 @@
       border-radius: 50%;
       width: 200px;
       margin: 1em 0;
-      box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+      box-shadow: $shadow;
     }
   
   }
