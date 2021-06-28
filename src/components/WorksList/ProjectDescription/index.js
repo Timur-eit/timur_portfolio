@@ -1,5 +1,9 @@
 import '../style.scss'
-import { Link } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
+import { useMemo } from 'react'
+
+// let history = createBrowserHistory()
+// console.log(history.location.pathname)
 
 function ProjectDescription(props) {
   const {
@@ -11,6 +15,9 @@ function ProjectDescription(props) {
     isSrcLink,
   } = props
 
+  const history = useMemo(() => createBrowserHistory(), [])
+  console.log(history)
+
   return (
     <div className='project-description'>
       <div>
@@ -19,8 +26,8 @@ function ProjectDescription(props) {
         {desciption}
         <a href={projectUrl} target='_blank' rel="noopener noreferrer" className='project-link'>Project Link</a>
         {isSrcLink && <a href={srcCodeUrl} target='_blank' rel="noopener noreferrer" className='project-link'>Source Code Link</a>}
-      </div>
-      <Link to='/' className='home-link'>Home</Link>
+      </div>      
+      <div className='home-link' onClick={() => history.back()}>Back</div>
     </div>
   )
 }

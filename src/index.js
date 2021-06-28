@@ -12,12 +12,8 @@ import {
   Route,
 } from 'react-router-dom'
 
-// import { createBrowserHistory } from 'history'
 import { myWorksList } from 'components/WorksList/worksList'
 
-
-// let history = createBrowserHistory()
-// console.log(history.location.pathname)
 
 ReactDOM.render(
   <React.StrictMode>
