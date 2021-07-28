@@ -32,7 +32,7 @@ export const myContactList = {
   vk : {
     text: 'To know a bit more about me you can visit my VK page',
     imgSrc: vkImg,
-    linkPath: 'https://vk.com/etsygankovxviii6',
+    linkPath: 'https://vk.com/timur_eit',
     altText: 'VK',
   },
 }
