@@ -1,5 +1,6 @@
 import agilePduImg from 'shared/img/works_agile-pdu.png'
 import webHelpMenuImg from 'shared/img/works_webhelp.png'
+import chatImg from 'shared/img/works_chat.png'
 import dataTableImg from 'shared/img/works_table.png'
 import uiCompsImg from 'shared/img/works_ui-comps.png'
 import whackAMoleImg from 'shared/img/whack-a-mole.png'
@@ -8,6 +9,7 @@ import gradientImg from 'shared/img/works_gradient.png'
 import portfolioImg from 'shared/img/works_portfolio.png'
 import brainGamesImg from 'shared/img/works_brain-games.png'
 import jsSamplesImg from 'shared/img/works_js-samples.png'
+
 
 import { projectDescription } from './projectDescriptionData.jsx'
 
@@ -51,6 +53,19 @@ export const myWorksList = {
     projectUrl: '/web-help-menu/index.html',
     isSrcLink: true,
     srcCodeUrl: 'https://github.com/Timur-eit/idea_web_help',
+  },
+  chat: {
+    title: 'Chat',
+    path: '/chat',
+    imgSrc: chatImg,
+    altText() {
+      return this.title + ' Image'
+    },
+    generalDescription: projectDescription.chat.general, 
+    mainDescription: projectDescription.chat.main,
+    projectUrl: 'https://github.com/Timur-eit/forasoft_jsdev_chat',
+    isSrcLink: false,
+    srcCodeUrl: '',
   },
   dataTable: {
     title: 'Web App with Data table',

@@ -52,6 +52,29 @@ export const projectDescription = {
       </>
     )
   },
+  chat: {
+    general: 'Web chat',
+    main: (
+      <>
+        <p>
+        Web chat implemented with sockets.io
+        </p>
+        <ul>
+          <p>List of technologies used:</p>
+          <p>Backend:</p>
+          <li>TypeScript (Node.js)</li>
+          <li>ExpressJS</li>
+          <li>Socket.IO</li>
+          <p>Frontend:</p>
+          <li>ReactJS</li>
+          <li>TypeScript</li>
+          <li>Material-UI</li>
+          <li>SASS</li>
+          <li>socket.io-client</li>
+        </ul>
+      </>
+    )
+  },
   dataTable: {
     general: 'Data table',
     main: (
