@@ -13,7 +13,7 @@ function Intro() {
           <h2>Frontend Developer</h2>
           <img src={mainPicture} className='main-picture' alt='me'/>
           <p>
-            Hello, I focused on logistics for 10 years, then I met programming and fell in love to this activity, to the point,  that   I became a programmer. I write on JS, tried some Python, Haskell, Kotlin, C++. I sincerely love programming and I want  toprogress in    this area.
+            Hello, I focused on logistics for 10 years, then I met programming and fell in love to this activity, to the point, that I became a programmer. I write on JS, tried some Python, Haskell, Kotlin, C++. I sincerely love programming and I want  to progress in this area.
           </p>
         </div>
       </div>
