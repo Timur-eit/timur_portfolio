@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'reset.css';
 import 'index.scss';
-
 import App from 'App';
 import ProjectDescription from 'components/WorksList/ProjectDescription';
 import {
@@ -10,7 +9,6 @@ import {
     Switch,
     Route,
 } from 'react-router-dom';
-
 import myWorksList from 'data/worksList';
 
 ReactDOM.render(
