@@ -1,5 +1,5 @@
 import './style.scss'
-import {myWorksList} from './worksList.js'
+import {myWorksList} from './worksList'
 
 import { Link } from 'react-router-dom'
 import { useMemo } from 'react'

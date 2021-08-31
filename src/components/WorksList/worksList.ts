@@ -1,19 +1,18 @@
-import agilePduImg from 'shared/img/works_agile-pdu.png'
-import webHelpMenuImg from 'shared/img/works_webhelp.png'
-import chatImg from 'shared/img/works_chat.png'
-import dataTableImg from 'shared/img/works_table.png'
-import uiCompsImg from 'shared/img/works_ui-comps.png'
-import whackAMoleImg from 'shared/img/whack-a-mole.png'
-import pockemonsImg from 'shared/img/works_pokemons.png'
-import gradientImg from 'shared/img/works_gradient.png'
-import portfolioImg from 'shared/img/works_portfolio.png'
-import brainGamesImg from 'shared/img/works_brain-games.png'
-import jsSamplesImg from 'shared/img/works_js-samples.png'
-
+import agilePduImg from 'shared/img/works_agile-pdu.png';
+import webHelpMenuImg from 'shared/img/works_webhelp.png';
+import chatImg from 'shared/img/works_chat.png';
+import dataTableImg from 'shared/img/works_table.png';
+import uiCompsImg from 'shared/img/works_ui-comps.png';
+import whackAMoleImg from 'shared/img/whack-a-mole.png';
+import pockemonsImg from 'shared/img/works_pokemons.png';
+import gradientImg from 'shared/img/works_gradient.png';
+import portfolioImg from 'shared/img/works_portfolio.png';
+import brainGamesImg from 'shared/img/works_brain-games.png';
+import jsSamplesImg from 'shared/img/works_js-samples.png';
 
 import { projectDescription } from './projectDescriptionData.jsx'
 
-export const myWorksList = {
+export const myWorksList: any = {
   agilePdu: {
     title: 'Agile-PDU online store',
     path: '/agile-pdu-description',

@@ -19,7 +19,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        {Object.keys(myWorksList).map((item) => {
+        {Object.keys(myWorksList).map((item: any) => {
           return (
             <Route path={myWorksList[item].path} key={myWorksList[item].path}>
               <ProjectDescription
