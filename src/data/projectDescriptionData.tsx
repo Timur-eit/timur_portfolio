@@ -1,4 +1,13 @@
-export const projectDescription = {
+import React from 'react';
+
+interface IProjectDescription {
+	[projectName: string]: {    
+		general: string,
+		main: React.ReactElement<string>
+  	}
+}
+
+export const projectDescription: IProjectDescription = {
   agilePdu: {
     general: 'Online store of electrical goods',
     main: (

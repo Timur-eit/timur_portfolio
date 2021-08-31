@@ -4,7 +4,17 @@ import githubImg from 'shared/img/contact_github.svg'
 import headHunterImg from 'shared/img/contact_hh.png'
 import vkImg from 'shared/img/contact_vk.svg'
 
-export const myContactList = {
+export interface IMyContactList {
+  [contactMethodName: string]: {
+    text: string,
+    imgSrc: string,
+    linkPath: string,
+    altText: string,
+
+  }
+}
+
+export const myContactList: IMyContactList = {
   email: {
     text: 'You can write me an email',
     imgSrc: emailImg,

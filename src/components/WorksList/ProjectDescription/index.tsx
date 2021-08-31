@@ -1,11 +1,18 @@
 import '../style.scss'
 import { createBrowserHistory } from 'history'
-import { useMemo } from 'react'
+import React from 'react'
 
-// let history = createBrowserHistory()
-// console.log(history.location.pathname)
+interface IProjectDescriptionProps {
+  title: string
+  projectUrl: string,
+  srcCodeUrl: string,
+  img: string,
+  desciption: React.ReactElement<string>,
+  isSrcLink: boolean,
+}
 
-function ProjectDescription(props) {
+
+function ProjectDescription(props: IProjectDescriptionProps) {
   const {
     title,
     projectUrl,
@@ -15,8 +22,7 @@ function ProjectDescription(props) {
     isSrcLink,
   } = props
 
-  const history = useMemo(() => createBrowserHistory(), [])
-  console.log(history)
+  const history = React.useMemo(() => createBrowserHistory(), [])
 
   return (
     <div className='project-description'>

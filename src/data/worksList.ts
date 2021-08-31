@@ -10,9 +10,23 @@ import portfolioImg from 'shared/img/works_portfolio.png';
 import brainGamesImg from 'shared/img/works_brain-games.png';
 import jsSamplesImg from 'shared/img/works_js-samples.png';
 
-import { projectDescription } from './projectDescriptionData.jsx'
+import { projectDescription } from './projectDescriptionData'
 
-export const myWorksList: any = {
+export interface IMyWorksList {
+  [projectName: string]: {
+    title: string,
+    path: string,
+    imgSrc: string,
+    altText: () => string,
+    generalDescription: string,
+    mainDescription: React.ReactElement<string>,
+    projectUrl: string,
+    isSrcLink: boolean,
+    srcCodeUrl: string,
+  }
+}
+
+const myWorksList: IMyWorksList = {
   agilePdu: {
     title: 'Agile-PDU online store',
     path: '/agile-pdu-description',
@@ -161,3 +175,5 @@ export const myWorksList: any = {
     srcCodeUrl: '',
   },
 }
+
+export default myWorksList;
