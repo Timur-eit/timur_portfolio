@@ -9,6 +9,7 @@ import gradientImg from 'shared/img/works_gradient.png';
 import portfolioImg from 'shared/img/works_portfolio.png';
 import brainGamesImg from 'shared/img/works_brain-games.png';
 import jsSamplesImg from 'shared/img/works_js-samples.png';
+import applicantFormImg from 'shared/img/works_applicant-form.png';
 
 import { projectDescription } from './projectDescriptionData';
 
@@ -52,6 +53,19 @@ const myWorksList: IMyWorksList = {
         projectUrl: '/',
         isSrcLink: true,
         srcCodeUrl: 'https://github.com/Timur-eit/timur_portfolio',
+    },
+    applicantForm: {
+        title: 'Web applicant form',
+        path: '/applicant_form',
+        imgSrc: applicantFormImg,
+        altText() {
+            return this.title + ' Image';
+        },
+        generalDescription: projectDescription.applicantForm.general,
+        mainDescription: projectDescription.applicantForm.main,
+        projectUrl: '/applicant_form/index.html',
+        isSrcLink: true,
+        srcCodeUrl: 'https://github.com/Timur-eit/applicant_form_reactJS',
     },
     webHelp: {
         title: 'Web-Help Visual Guidelines',

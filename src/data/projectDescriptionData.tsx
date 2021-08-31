@@ -41,10 +41,29 @@ export const projectDescription: IProjectDescription = {
                 </p>
                 <ul>
                     <p>List of technologies used:</p>
-                    <li>React JS (Create React App)</li>
+                    <li>TypeScript</li>
+                    <li>React (Create React App)</li>
                     <li>React Router</li>
                     <li>SASS</li>
                     <li>MATERIAL-UI</li>
+                </ul>
+            </>
+        ),
+    },
+    applicantForm: {
+        general: 'Expandable applicant form',
+        main: (
+            <>
+                <p>
+                    Client-side validation form (including for email format and maximum file size)
+                </p>
+                <ul>
+                    <p>List of technologies used:</p>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>Formik</li>
+                    <li>React Bootstrap</li>
                 </ul>
             </>
         ),
