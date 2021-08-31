@@ -1,74 +1,73 @@
 @import 'src/colors';
 
 .skills {
-  min-height: 100vh;
-  background-color: $backgroundDark;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    min-height: 100vh;
+    background-color: $backgroundDark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  h2 {
-    margin: 1em;
-  }
-
-  .skills__window {
-    min-width: 300px;
-    max-width: 700px;
-    min-height: 300px;
-    background-color: #203647;
-    border-radius: 8px;
-    margin-bottom: 4em;
-    box-shadow: $shadow;
-
-    .window__header {
-      display: flex;
-      height: 35px;
-      width: 100%;
-      background-color: $backgroundLigth;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-
-      .window_control-panel {
-        display: flex;
-        align-self: center;
-
-        div {
-          width: 12px;
-          height: 12px;
-          display: block;
-          border-radius: 50%;
-          margin-left: 0.5em;
-        }
-
-        div:nth-of-type(1) {
-          background-color: #FC4647;
-          margin-left: 1em;
-        }
-        div:nth-of-type(2) {
-          background-color: #FBB025;
-        }
-        div:nth-of-type(3) {
-          background-color: #2AC131;
-        }
-      }
+    h2 {
+        margin: 1em;
     }
 
-    .window__content {
-      text-align: left;
-      padding: 0.5em;
-      line-height: 1.5em;
+    .skills__window {
+        min-width: 300px;
+        max-width: 700px;
+        min-height: 300px;
+        background-color: #203647;
+        border-radius: 8px;
+        margin-bottom: 4em;
+        box-shadow: $shadow;
 
-      span {
-        color: rgba(160, 160, 160, 0.5);
-      }
+        .window__header {
+            display: flex;
+            height: 35px;
+            width: 100%;
+            background-color: $backgroundLigth;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+            .window_control-panel {
+                display: flex;
+                align-self: center;
+
+                div {
+                    width: 12px;
+                    height: 12px;
+                    display: block;
+                    border-radius: 50%;
+                    margin-left: 0.5em;
+                }
+
+                div:nth-of-type(1) {
+                    background-color: #fc4647;
+                    margin-left: 1em;
+                }
+                div:nth-of-type(2) {
+                    background-color: #fbb025;
+                }
+                div:nth-of-type(3) {
+                    background-color: #2ac131;
+                }
+            }
+        }
+
+        .window__content {
+            text-align: left;
+            padding: 0.5em;
+            line-height: 1.5em;
+
+            span {
+                color: rgba(160, 160, 160, 0.5);
+            }
+        }
     }
-  }
-
 }
 
 @media screen and (min-width: 820px) {
-  .skills__window {
-    width: 500px;
-  }
+    .skills__window {
+        width: 500px;
+    }
 }
