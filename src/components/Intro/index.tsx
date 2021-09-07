@@ -15,7 +15,7 @@ function Intro() {
                     <p>
                         Hello, I focused on logistics for 10 years, then I met
                         programming and fell in love to this activity, to the
-                        point, that I became a programmer. I write on JS, tried
+                        point, that I became a programmer. I write in JS, tried
                         some Python, Haskell, Kotlin, C++. I sincerely love
                         programming and I want to progress in this area.
                     </p>
