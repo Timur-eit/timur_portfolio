@@ -10,6 +10,8 @@ import portfolioImg from 'shared/img/works_portfolio.png';
 import brainGamesImg from 'shared/img/works_brain-games.png';
 import jsSamplesImg from 'shared/img/works_js-samples.png';
 import applicantFormImg from 'shared/img/works_applicant-form.png';
+import usersDataTableImg from 'shared/img/works_users-data-table.png';
+
 
 import { projectDescription } from './projectDescriptionData';
 
@@ -92,6 +94,19 @@ const myWorksList: IMyWorksList = {
         projectUrl: 'https://github.com/Timur-eit/forasoft_jsdev_chat',
         isSrcLink: false,
         srcCodeUrl: '',
+    },
+    usersDataTable: {
+        title: 'Users data table',
+        path: '/users-table_react',
+        imgSrc: usersDataTableImg,
+        altText() {
+            return this.title + ' Image';
+        },
+        generalDescription: projectDescription.usersDataTable.general,
+        mainDescription: projectDescription.usersDataTable.main,
+        projectUrl: '/users-table_react',
+        isSrcLink: true,
+        srcCodeUrl: 'https://github.com/Timur-eit/users-table_react',
     },
     dataTable: {
         title: 'Web App with Data table',
