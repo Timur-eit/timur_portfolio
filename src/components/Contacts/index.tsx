@@ -8,6 +8,13 @@ interface IContactsProps {
 function Contacts(props: IContactsProps) {
     const { contactList } = props;
 
+    const scrollToStart = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
     return (
         <div className="contacts-container">
             <h2>where you can find me</h2>
@@ -30,9 +37,9 @@ function Contacts(props: IContactsProps) {
                     );
                 })}
             </div>
-            <a href="#intro" className="back-home">
+            <button className="back-home" onClick={scrollToStart}>
                 back to top
-            </a>
+            </button>
         </div>
     );
 }

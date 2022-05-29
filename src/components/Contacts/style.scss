@@ -49,16 +49,21 @@
     }
 
     .back-home {
+        color: $fontColor;
+        font-size: 1em;
         text-transform: uppercase;
         padding: 0.5em 1em;
         margin: 4em 0 1em 0;
         border-radius: 5px;
+        border: none;
+        background: none;
         opacity: 0.8;
         transition-duration: 300ms;
         &:hover {
             opacity: 1;
             background-color: $backgroundLigth;
             transform: scale(1.1);
+            cursor: pointer;
         }
     }
 }
