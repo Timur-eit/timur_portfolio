@@ -1,3 +1,3 @@
 # Evgeny Tsygankov Frontend Developer Portfolio
 
-[https://greatdeal.space/](https://greatdeal.space/)
+[https://great-deal.space/](https://great-deal.space/)
